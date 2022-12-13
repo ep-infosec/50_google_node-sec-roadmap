@@ -1,0 +1,48 @@
+# Comments are stripped
+{
+    "root": ".",
+    "structure": {
+        "readme": "cover.md"
+    },
+    "title": "A Roadmap for Node.js Security",
+    "description": "Discusses security and privacy threats to the Node.js community and ways the community might address them.  Assumes a basic familiarity with JS & the Node ecosystem.",
+    "author": "Mike Samuel et al",
+    "language": "en",
+    "gitbook": ">= 3.0.0",
+    "plugins": [
+        "links",
+        "ga"
+    ],
+    "pluginsConfig": {
+        # Google Analytics integration
+        "ga": {
+            "token": "UA-111883728-1",
+            "configuration": {
+                "anonymizeIp": true,
+                "forceSSL": true
+            }
+        },
+        "links": {
+            "links": [
+                {
+                    # Adds a printer icon at the top.
+                    # See styles/website.css for styling.
+                    "label": "Printable",
+                    # "icon" corresponds to a classname
+                    "icon": "print-button",
+                    # `make pdf` produces book.json which
+                    # needs to be copied into _book/ for
+                    # this to work.
+                    # TODO: Point to an authoritative version
+                    # via absolute URL once published.
+                    "url": "/node-sec-roadmap.pdf"
+                },
+                {
+                    "label": "Github",
+                    "icon": "github-button",
+                    "url": "https://github.com/google/node-sec-roadmap"
+                }
+            ]
+        }
+    }
+}
